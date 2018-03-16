@@ -11,44 +11,13 @@
             </div>
         </div>
         <div class='content'>
-            <h2>渐变色文本</h2>
-            <div class="discoloration-text">
+            <h2>下划线样式</h2>
+            <div class="underline">
+                <p>样式demo</p>
+                <pre></pre>
+                <blockquote>https://tympanus.net/Development/InlineAnchorStyles/</blockquote>
+                
     
-                <code>background-image: linear-gradient(135deg, deeppink, dodgerblue);</code>
-                <code>background-clip: text;</code>
-                <code> -webkit-background-clip: text;</code>
-                <code>box-decoration-break: clone;</code>
-                <code>-webkit-box-decoration-break: clone;</code>
-                <code>color: transparent;</code>
-                <pre></pre>
-                <p>这里涉及到了几个css3属性:</p>
-                <p>linear-gradient() 函数用于创建一个表示两种或多种颜色线性渐变的图片。</p>
-                <pre></pre>
-                <blockquote>
-                    <code> /* 渐变轴为45度，从蓝色渐变到红色 */ </code>
-                    <code> linear-gradient(45deg, blue, red);</code>
-                    <code> /* 从右下到左上、从蓝色渐变到红色 */</code>
-                    <code> linear-gradient(to left top, blue, red);</code>
-                    <code> /* 从下到上，从蓝色开始渐变、到高度40%位置是绿色渐变开始、最后以红色结束 */</code>
-                    <code> linear-gradient(0deg, blue, green 40%, red);</code>
-                </blockquote>
-                <p>background-clip 设置元素的背景（背景图片或颜色）是否延伸到边框下面。</p>
-                <pre></pre>
-                <blockquote>
-                    <code> /* 背景延伸到边框外沿（但是在边框之下） */ </code>
-                    <code> background-clip: border-box</code>
-                    <code> /* 边框下面没有背景，即背景延伸到内边距外沿 */</code>
-                    <code> background-clip: padding-box</code>
-                    <code> /* 背景裁剪到内容区 (content-box) 外沿 */</code>
-                    <code> background-clip: content-box</code>
-                    <code> /* 背景被裁剪为文字的前景色 */</code>
-                    <code> background-clip: text</code>
-                    <code> /*  */</code>
-                    <code> background-clip: inherit</code>
-                </blockquote>
-                <p>box-decoration-break 是CSS片段模块（CSS Fragmentation Module Level 3）中的一个属性。取值有两个clone slice(默认值)</p>
-                <p>box-decoration-break属性是用来控制行内元素有关于padding、background、border-image、border、margin和clip属性在行内元素多行情形下的每一个独立的片段渲染形式</p>
-                <pre></pre>
             </div>
         </div>
         <div class='footer'>
@@ -63,7 +32,7 @@
 
 <script>
     export default {
-        name: "DiscolorationText"
+        name: "Underline"
     };
 </script>
 
@@ -112,6 +81,7 @@
         .content {
             width: 1000px;
             margin: 0 auto;
+            min-height: 800px;
             background-color: rgba(255, 255, 255, 0.5);
             h2 {
                 font-size: 26px;
@@ -119,12 +89,8 @@
                 text-align: center;
                 padding: 10px 0 30px;
             }
-            .discoloration-text {
-                padding: 0 20px 20px;
-                p {
-                    color: #444;
-                    // text-align: center;
-                }
+            .underline {
+                padding: 30px;
             }
         }
         .footer {

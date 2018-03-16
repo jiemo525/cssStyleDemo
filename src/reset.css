@@ -54,13 +54,11 @@ ol {
 
 a {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+   
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 sup {
@@ -91,4 +89,5 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 
